@@ -31,7 +31,7 @@ namespace UniduringQuarantine
                       //__.....----~~~~._\ | /_.~~~~----.....__\\
                      ====================\\|//====================
                                          `---`");
-            Console.WriteLine("\n\nWelcome to Uni During Quarantine. Press any key to continue");
+            Console.WriteLine("\n\nWelcome to Uni During Quarantine. Press any key to continue!");
             Console.ReadKey();
             Console.Write("What is your name: ");
             currentPlayer.name = Console.ReadLine();
