@@ -46,7 +46,7 @@ namespace UniduringQuarantine
                 return false; // Gör så att man inte kan gå utanför kartan.
             }
             // Gör så att man kan gå på delarna som ser ut som " " eller "X" på kartan.
-            return Grid[y, x] == " ";
+            return Grid[y, x] == " " || Grid[y, x] == "X";
         }
 
 
