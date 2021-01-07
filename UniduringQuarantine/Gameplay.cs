@@ -155,9 +155,6 @@ namespace UniduringQuarantine
             Console.Write("*RECEPTION*");
             Console.SetCursorPosition(1, 16);
             StoryLine();
-            Console.SetCursorPosition(1, 25);
-            Console.WriteLine(currentPlayer.X + " " + currentPlayer.Y);
-            Console.Write("Write here: ");
             string moveChoice = Console.ReadLine();
             switch (moveChoice)
             {
