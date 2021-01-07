@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine\\UniduringQuarantine.csproj": {}
+    "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine - 0106\\UniduringQuarantine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine\\UniduringQuarantine.csproj": {
+    "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine - 0106\\UniduringQuarantine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine\\UniduringQuarantine.csproj",
+        "projectUniqueName": "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine - 0106\\UniduringQuarantine.csproj",
         "projectName": "UniduringQuarantine",
-        "projectPath": "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine\\UniduringQuarantine.csproj",
+        "projectPath": "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine - 0106\\UniduringQuarantine.csproj",
         "packagesPath": "C:\\Users\\Alice\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine\\obj\\",
+        "outputPath": "C:\\Users\\Alice\\Desktop\\It-säkerhet och mjukvarutestning\\GIK 299 - objektorienterad programmering\\grupp 9\\Grupp9\\UniduringQuarantine - 0106\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alice\\AppData\\Roaming\\NuGet\\NuGet.Config",
