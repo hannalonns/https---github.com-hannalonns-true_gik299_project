@@ -285,6 +285,11 @@ namespace UniduringQuarantine
                 keyCard4.Y -= 2;
 
             }
+            
+             else if (currentEnemy.X == 10 && currentEnemy.Y == 1) // så att fienden inte hamnar utanför kartan.
+            {
+                currentEnemy.Y += 11;
+            }
 
 
             // RECEPTION // 
@@ -612,10 +617,7 @@ namespace UniduringQuarantine
 
             }
 
-            else if (currentEnemy.X == 10 && currentEnemy.Y == 1) // så att fienden inte hamnar utanför kartan.
-            {
-                currentEnemy.Y += 11;
-            }
+          
 
             else if (currentPlayer.X == 10 && currentPlayer.Y == 0)   // När man vinner.
             {
