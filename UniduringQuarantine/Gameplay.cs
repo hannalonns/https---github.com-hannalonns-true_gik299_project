@@ -67,7 +67,7 @@ namespace UniduringQuarantine
 
             // HÄR ÄR EN LITEN EASTER EGG TILL THOMAS :) 
 
-            else if (currentPlayer.name.ToLower() == "Thomas")
+            else if (currentPlayer.name.ToLower() == "thomas")
             {
                 Console.WriteLine("\nYou can't remember much at all, but you have the same name as your favorite teacher!");
                 Console.ReadLine();
