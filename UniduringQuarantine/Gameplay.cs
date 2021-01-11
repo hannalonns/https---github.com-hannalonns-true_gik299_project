@@ -23,107 +23,160 @@ namespace UniduringQuarantine
         {
 
 
-            Console.WriteLine(@"
+            // Console.WriteLine(@"
 
-                  __ __ __  __ __    ____   __ __ ____  __ __  __   ___     
-                  || || ||\ || ||    || \\  || || || \\ || ||\ ||  // \\    
-                  || || ||\\|| ||    ||  )) || || ||_// || ||\\|| (( ___    
-                  \\_// || \|| ||    ||_//  \\_// || \\ || || \||  \\_||    
-                 ___   __ __  ___  ____   ___  __  __ ______ __ __  __  ____
-                // \\  || || // \\ || \\ // \\ ||\ || | || | || ||\ || ||   
-               ((   )) || || ||=|| ||_// ||=|| ||\\||   ||   || ||\\|| ||== 
-                \\_/\\ \\_// || || || \\ || || || \||   ||   || || \|| ||___
+            //       __ __ __  __ __    ____   __ __ ____  __ __  __   ___     
+            //       || || ||\ || ||    || \\  || || || \\ || ||\ ||  // \\    
+            //       || || ||\\|| ||    ||  )) || || ||_// || ||\\|| (( ___    
+            //       \\_// || \|| ||    ||_//  \\_// || \\ || || \||  \\_||    
+            //      ___   __ __  ___  ____   ___  __  __ ______ __ __  __  ____
+            //     // \\  || || // \\ || \\ // \\ ||\ || | || | || ||\ || ||   
+            //    ((   )) || || ||=|| ||_// ||=|| ||\\||   ||   || ||\\|| ||== 
+            //     \\_/\\ \\_// || || || \\ || || || \||   ||   || || \|| ||___
                                                           
 
-                            __...--~~~~~-._   _.-~~~~~--...__
-                          //               `V'               \\ 
-                         //                 |                 \\ 
-                        //__...--~~~~~~-._  |  _.-~~~~~~--...__\\ 
-                       //__.....----~~~~._\ | /_.~~~~----.....__\\
-                      ====================\\|//====================
-                                          `---`
+            //                 __...--~~~~~-._   _.-~~~~~--...__
+            //               //               `V'               \\ 
+            //              //                 |                 \\ 
+            //             //__...--~~~~~~-._  |  _.-~~~~~~--...__\\ 
+            //            //__.....----~~~~._\ | /_.~~~~----.....__\\
+            //           ====================\\|//====================
+            //                               `---`
                             
-                              A text-based adventure by:
-             ||  Alice Forssblad  ||  Hanna Lönn  ||  Martin Lundstedt  ||");
-            Console.WriteLine(@"                                  
-                      Press any key to play. ||  Press x to exit. ");
-            string userInput = Console.ReadLine();
-            if (userInput.ToLower() == "x")
-            {
-                Environment.Exit(0);
-            }
-            Console.ReadKey();
-            Console.Clear();
-            Console.Write("What is your name: ");
-            currentPlayer.name = Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine("you awake in a cold and dark school, you're in Högskolan Dalarna in Borlänge.");
-            Console.WriteLine("You vaguely remember everyone at school starting to cough and due to safety reasons a lockdown began, but...The teachers...\nThey didn't just cough. You think A teacher starting chasing the students, everybody was screaming.");
-            if (currentPlayer.name == "")
-            {
-                Console.WriteLine("\nYou can't remember much, not even what your name is.");
-                Console.ReadLine();
-            }
+            //                   A text-based adventure by:
+            //  ||  Alice Forssblad  ||  Hanna Lönn  ||  Martin Lundstedt  ||");
+            // Console.WriteLine(@"                                  
+            //           Press any key to play. ||  Press x to exit. ");
+            // string userInput = Console.ReadLine();
+            // if (userInput.ToLower() == "x")
+            // {
+            //     Environment.Exit(0);
+            // }
+            // Console.ReadKey();
+            // Console.Clear();
+            // Console.Write("What is your name: ");
+            // currentPlayer.name = Console.ReadLine();
+            // Console.Clear();
+            // Console.WriteLine("you awake in a cold and dark school, you're in Högskolan Dalarna in Borlänge.");
+            // Console.WriteLine("You vaguely remember everyone at school starting to cough and due to safety reasons a lockdown began, but...The teachers...\nThey didn't just cough. You think A teacher starting chasing the students, everybody was screaming.");
+            // if (currentPlayer.name == "")
+            // {
+            //     Console.WriteLine("\nYou can't remember much, not even what your name is.");
+            //     Console.ReadLine();
+            // }
 
-            // HÄR ÄR EN LITEN EASTER EGG TILL THOMAS :) 
+            // // HÄR ÄR EN LITEN EASTER EGG TILL THOMAS :) 
 
-            else if (currentPlayer.name.ToLower() == "thomas")
-            {
-                Console.WriteLine("\nYou can't remember much at all, but you have the same name as your favorite teacher!");
-                Console.ReadLine();
-            }
+            // else if (currentPlayer.name.ToLower() == "thomas")
+            // {
+            //     Console.WriteLine("\nYou can't remember much at all, but you have the same name as your favorite teacher!");
+            //     Console.ReadLine();
+            // }
 
-            else
-            {
-                Console.WriteLine("\nYou can't remember much more, but you atleast know your name is {0} .", currentPlayer.name);
-                Console.ReadLine();
-            }
+            // else
+            // {
+            //     Console.WriteLine("\nYou can't remember much more, but you atleast know your name is {0} .", currentPlayer.name);
+            //     Console.ReadLine();
+            // }
 
-            Console.Clear();
-            Console.WriteLine("You can walk by writing go up (W), go down (S), go left (A), go right (D)");
-            Console.ReadLine();
-            Console.Clear();
-
-
-            // HÄR ÄR KARTAN 
-
-            string[,] grid =
-           {
-
-                {"=","=","=","=","=","=","=","=","=","=","X","="},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"=","=","=","=","=","=","=","=","=","="," ","="},
-                {"=","=","=","=","=","=","=","=","=","="," ","="},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"=","=","=","=","=","=","=","=","=","="," ","="},
-                {"=","=","=","=","=","=","=","=","=","="," ","="},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"=","=","=","=","=","=","=","=","=","="," ","="},
-                {"=","=","=","=","=","=","=","=","=","="," ","="},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"|"," "," "," "," "," "," "," "," "," "," ","|"},
-                {"="," ","=","=","=","=","=","=","=","=","=","="},
-            };
-
-            MyMap = new Map(grid);
-
-            // Dessa nedanför är för att kunna spela spelet igen.
-
-            currentEnemy = new Enemies(10, 13);
-            currentPlayer = new Player(1, 15);
-            keyCard1 = new KeyCards(1, 13);
-            keyCard2 = new KeyCards(4, 10);
-            keyCard3 = new KeyCards(7, 5);
-            keyCard4 = new KeyCards(4, 2);
-
-            // Här körs spelets loop och storyline. 
-
-            RunGameLoop();
-            StoryLine();
+            // Console.Clear();
+            // Console.WriteLine("You can walk by writing go up (W), go down (S), go left (A), go right (D)");
+            // Console.ReadLine();
+            // Console.Clear();
+            //['','','']
+            //['','','']
+            Room[,] teachersLounch = new Room[3,10];
+            GenerateRoom(teachersLounch);
+            Room[,] rooms = new Room[10,10];
+            Random rand = new Random();
+            string[] descs = new string[100];
+            descs[0] = "Rum 0";
+            descs[1] = "Rum 1";
+            descs[2] = "Rum 2";
+            descs[3] = "Rum 3";
+            descs[4] = "Rum 4";
+            descs[5] = "Rum 5";
+            descs[6] = "Rum 6";
+            descs[7] = "Rum 7";
+            descs[8] = "Rum 8";
+            descs[9] = "Rum 9";
         }
+        public void GenerateRoom(Room[,] rooms)
+        {
+            for(int i = 0; i < rooms.GetLength(0); i++) 
+            {
+                for(int j = 0; j < rooms.GetLength(1); j++) 
+                {
+                    var roomNumber = int.Parse(i.ToString()+j.ToString());
+                    var r = new Room(roomNumber, 0, 0);
+                    rooms[i,j] = r;
+                }
+            }
+            for(int i = 0; i < 10; i++) 
+            {
+                Random r = new Random();
+                int j = r.Next(0, rooms.GetLength(0));
+                int k = r.Next(0,  rooms.GetLength(1));
+                rooms[j,k].enemy = r.Next(0, 4);
+            }
+
+            for(int i = 0; i < 10; i++) 
+            {
+                Random r = new Random();
+                int j = r.Next(0, rooms.GetLength(0));
+                int k = r.Next(0, rooms.GetLength(1));
+                rooms[j,k].key = 1;
+            }
+            
+        }
+                        
+        //     // for(int i = 0; i < 10; i++) //Rows
+        //     // {
+        //     //     for(int ii = 0; ii < 10; ii++) //Columns
+        //     //     {
+
+        //     //     }
+        //     // }
+            
+
+        //     // HÄR ÄR KARTAN 
+        //     string[,] grid =
+        //    {
+
+        //         {"=","=","=","=","=","=","=","=","=","=","X","="},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"=","=","=","=","=","=","=","=","=","="," ","="},
+        //         {"=","=","=","=","=","=","=","=","=","="," ","="},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"=","=","=","=","=","=","=","=","=","="," ","="},
+        //         {"=","=","=","=","=","=","=","=","=","="," ","="},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"=","=","=","=","=","=","=","=","=","="," ","="},
+        //         {"=","=","=","=","=","=","=","=","=","="," ","="},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"|"," "," "," "," "," "," "," "," "," "," ","|"},
+        //         {"="," ","=","=","=","=","=","=","=","=","=","="},
+        //     };
+
+        //     MyMap = new Map(grid);
+
+        //     // Dessa nedanför är för att kunna spela spelet igen.
+
+        //     currentEnemy = new Enemies(10, 13);
+        //     currentPlayer = new Player(1, 15);
+        //     keyCard1 = new KeyCards(1, 13);
+        //     keyCard2 = new KeyCards(4, 10);
+        //     keyCard3 = new KeyCards(7, 5);
+        //     keyCard4 = new KeyCards(4, 2);
+
+        //     // Här körs spelets loop och storyline. 
+
+        //     RunGameLoop();
+        //     StoryLine();
+        //}
 
 
         // Här Ritas allt på kartan ut. 
@@ -628,7 +681,20 @@ namespace UniduringQuarantine
         }
 
     }
-
+    public class Room
+    {
+        public int key = 0;
+        public int enemy = 0;
+        public int roomnr = -1;
+        public string Description = string.Empty;
+        public Room(int roomNr, int key = 0, int enemy = 0, string Description = "")
+        {
+            roomnr = roomNr;
+            this.key = key;
+            this.enemy = enemy;
+            this.Description = Description;
+        }
+    }
 }
 
 
