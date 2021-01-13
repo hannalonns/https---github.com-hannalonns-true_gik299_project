@@ -19,7 +19,7 @@ namespace UniduringQuarantine
         public void Combat()
         {
             string n = "teacher";
-            int p = rand.Next(10, 20);
+            int p = rand.Next(10);
             int h = 1;
 
 
@@ -34,8 +34,8 @@ namespace UniduringQuarantine
                     Console.WriteLine($"You throw your big, heavy C# book, which bores the {n} to death.");
                     h -= 1;
 
-                    // Ger en tredjedels chans att förlora mellan 10-20 i hälsa.
-                    if (rand.Next(1, 4) == 3)
+                    // Ger en femtedels chans att förlora mellan 10-20 i hälsa.
+                    if (rand.Next(1, 6) == 5)
                     {
                         Console.WriteLine("They attack quickly! You have no time to dodge\n You lost {0} health", p);
                         Gameplay.currentPlayer.health -= p;
