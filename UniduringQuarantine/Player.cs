@@ -10,7 +10,6 @@ namespace UniduringQuarantine
         public string name;
         public int keycard = 0;  // man börjar med 0 nyckar
         public float health = 100; // ens hälsa 
-        public int damage = 10;  // man tar 10 damage av fiender.
         public int potion = 10; // man får 10 hälsa av fiender ibland. 
         public int attack = 1;  // man ger 1 damage i en fight. 
 
@@ -27,16 +26,17 @@ namespace UniduringQuarantine
         set; 
         }
 
-        
-
-        public Player(int startX, int startY) 
         // Här sparas vart spelaren börjar.
+        public Player(int startX, int startY) 
+        
         {
             X = startX; 
             Y = startY;
             Character ="O";
-        }
-        public void Draw() // här ritas spelaren ut på kartan.
+        } 
+        
+        // här ritas spelaren ut på kartan.
+        public void Draw()
         {
             Console.SetCursorPosition(X,Y);
             Console.Write(Character);
